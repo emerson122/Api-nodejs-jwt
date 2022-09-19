@@ -23,7 +23,9 @@ app.get('/',(req,res)=>{
 app.use(require("./routes/registro"));
 app.use(require("./routes/login"));
 
-
+app.get('*',function (req,res) {
+    res.status(404).send('Error 404 - Recurso no encontrado :(')
+});
 // iniciar servidor 
 
 app.listen(app.get("port"), () => {

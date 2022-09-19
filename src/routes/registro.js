@@ -58,6 +58,6 @@ router.delete('/usuario/borrar/:cod',(req,res)=>{
         res.send('Los datos fueron borrados correctamente')
     })
     console.log('Datos borrados correctamente');
-})
+});
 
 module.exports=router;
